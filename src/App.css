@@ -1,0 +1,93 @@
+h1 {
+  text-align: center;
+}
+
+#todo-list {
+  width: 600px;
+  margin: 60px auto;
+}
+
+form, .task {
+  border: 1px solid #000000;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+form input {
+  padding: 4px 8px;
+  flex-grow: 1;
+  margin-right: 16px;
+  border-radius: 10px;
+}
+
+.task {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-size: 16px;
+  background-color: rgb(18, 22, 100);
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(35, 43, 193);
+}
+
+button:focus {
+  outline: 0;
+}
+
+input[type='text'] { 
+  font-size: 25px; 
+  font-family: monospace;
+}
+
+.task input[type="checkbox"] {
+  transform: scale(1.7) translateY(1px);
+  margin: 0 16px 0 0;
+  cursor: pointer;
+}
+
+.task-text input {
+  padding: 4px;
+}
+
+.task-text {
+  font-size: 25px;
+  line-height: 25px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.task-completed {
+  display: flex;
+  margin: 10px 0;
+}
+
+.task-actions {
+  display: flex;
+  justify-content: end;
+}
+
+.task-actions button {
+  margin-left: 10px;
+}
+
+.task-text input[type="checkbox"]:checked+input[type="text"] {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
